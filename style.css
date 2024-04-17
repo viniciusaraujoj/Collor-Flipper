@@ -1,0 +1,146 @@
+/*
+=============== 
+Fonts
+===============
+*/
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+/*
+=============== 
+Variables
+===============
+*/
+
+:root {
+  --clr-primary: #49a6e9;
+  --clr-white: #fff;
+  --clr-black: #222222;
+  --transition: all 0.2s linear;
+  --letter-spacing: 0.25rem;
+  --radius: 0.5rem;
+  --ff-primary: "Roboto", sans-serif;
+}
+
+/*
+=============== 
+Global Styles
+===============
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--ff-primary);
+  line-height: 1.5;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.center {
+  width: 90vw;
+  max-width: 1178px;
+  margin: 0 auto;
+}
+
+/*
+=============== 
+Nav
+===============
+*/
+
+nav {
+  background: var(--clr-white);
+  height: 3rem;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  display: flex;
+}
+
+.main-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+h1 {
+  font-size: 1.3rem;
+  color: var(--clr-primary);
+  letter-spacing: var(--letter-spacing);
+}
+
+.links {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.links li a {
+  font-size: 1.3rem;
+  color: var(--clr-black);
+  letter-spacing: var(--letter-spacing);
+  transition: var(--transition);
+}
+
+.links li a:hover {
+  color: var(--clr-primary);
+}
+
+/*
+=============== 
+Main
+===============
+*/
+
+main {
+  display: grid;
+  height: calc(100vh - 3rem);
+  place-items: center;
+}
+
+.main-container {
+  text-align: center;
+}
+
+.main-container h2 {
+  margin-bottom: 2rem;
+}
+
+h2 {
+  font-size: 2.5rem;
+  letter-spacing: var(--letter-spacing);
+  background-color: var(--clr-black);
+  color: var(--clr-white);
+  border-radius: var(--radius);
+  padding: 1rem 2rem;
+}
+
+.color {
+  color: var(--clr-primary);
+}
+
+.btn {
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+  cursor: pointer;
+  background: transparent;
+  border: 0.2rem solid var(--clr-black);
+  border-radius: var(--radius);
+  padding: 0.5rem 0.8rem;
+  transition: var(--transition);
+}
+
+.btn:hover {
+  background: var(--clr-black);
+  color: var(--clr-white);
+}
