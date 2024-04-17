@@ -95,6 +95,16 @@ h1 {
   color: var(--clr-primary);
 }
 
+@media screen and (max-width: 778px) {
+  h1 {
+    font-size: 1rem;
+  }
+
+  .links li a {
+    font-size: 1rem;
+  }
+}
+
 /*
 =============== 
 Main
@@ -143,4 +153,30 @@ h2 {
 .btn:hover {
   background: var(--clr-black);
   color: var(--clr-white);
+}
+
+@media screen and (max-width: 992px) {
+  h2 {
+    font-size: 2rem;
+  }
+}
+
+/* @media screen and (max-width: 778px) {
+  h2 {
+    font-size: 1.3rem;
+  }
+
+  .btn {
+    font-size: 0.9rem;
+  }
+} */
+
+@media screen and (max-width: 580px) {
+  h2 {
+    font-size: 0.9rem;
+  }
+
+  .btn {
+    font-size: 0.9rem;
+  }
 }
